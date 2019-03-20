@@ -68,3 +68,5 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem "bootstrap", ">= 4.3.1"
 gem 'dotenv-rails'
 gem 'jquery-rails'
+# clawler（HTMLからstringを取得）
+gem 'nokogiri'
