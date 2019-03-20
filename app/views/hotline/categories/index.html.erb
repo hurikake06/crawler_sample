@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Hotline Categories</h1>
+
+<table class='table'>
+  <thead>
+    <tr>
+      <th>Href</th>
+      <th>Name</th>
+      <th>Parent</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hotline_categories.each do |hotline_category| %>
+      <tr>
+        <td><%= hotline_category.href %></td>
+        <td><%= hotline_category.name %></td>
+        <td><%= hotline_category.parent_id %></td>
+        <td><%= link_to 'Show', hotline_category %></td>
+        <td><%= link_to 'Edit', edit_hotline_category_path(hotline_category) %></td>
+        <td><%= link_to 'Destroy', hotline_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hotline Category', new_hotline_category_path %>

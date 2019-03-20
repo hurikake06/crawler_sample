@@ -1,0 +1,2 @@
+module Hotline::ServicesHelper
+end

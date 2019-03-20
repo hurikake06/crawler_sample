@@ -1,0 +1,32 @@
+<%= form_with(model: hotline_service, local: true) do |form| %>
+  <% if hotline_service.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(hotline_service.errors.count, "error") %> prohibited this hotline_service from being saved:</h2>
+
+      <ul>
+      <% hotline_service.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :href %>
+    <%= form.text_field :href %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category_id %>
+    <%= form.text_field :category_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :value %>
+    <%= form.text_field :value %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
