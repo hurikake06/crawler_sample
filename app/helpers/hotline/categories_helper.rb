@@ -1,0 +1,2 @@
+module Hotline::CategoriesHelper
+end

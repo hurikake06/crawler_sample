@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Href:</strong>
+  <%= @hotline_category.href %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @hotline_category.name %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @hotline_category.parent_id %>
+</p>
+
+<%= link_to 'Edit', edit_hotline_category_path(@hotline_category) %> |
+<%= link_to 'Back', hotline_categories_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Href:</strong>
+  <%= @hotline_service.href %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @hotline_service.category_id %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @hotline_service.value %>
+</p>
+
+<%= link_to 'Edit', edit_hotline_service_path(@hotline_service) %> |
+<%= link_to 'Back', hotline_services_path %>
